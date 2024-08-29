@@ -10,6 +10,7 @@ import Foundation
 struct MenuItem {
     var name: String
     var imageName: String
-    var ingredientes: [String]
+    var ingredients: [String]
+    var description: String
     var isGlutenFree: Bool
 }

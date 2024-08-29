@@ -16,6 +16,7 @@
 		F19563182C808BA4005E81EC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19563172C808BA4005E81EC /* DataService.swift */; };
 		F19563212C808C56005E81EC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19563202C808C56005E81EC /* Restaurant.swift */; };
 		F19563232C808DF3005E81EC /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19563222C808DF3005E81EC /* MenuItem.swift */; };
+		F19563272C809121005E81EC /* ResutarantData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F19563262C809121005E81EC /* ResutarantData.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F19563172C808BA4005E81EC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F19563202C808C56005E81EC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F19563222C808DF3005E81EC /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		F19563262C809121005E81EC /* ResutarantData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ResutarantData.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,8 @@
 				F19563252C808E0D005E81EC /* Helpers */,
 				F19563192C808BFD005E81EC /* Services */,
 				F19563092C808AE7005E81EC /* Assets.xcassets */,
+				F19563282C8094DA005E81EC /* New Group */,
+				F19563262C809121005E81EC /* ResutarantData.txt */,
 				F195630B2C808AE7005E81EC /* Preview Content */,
 			);
 			path = Restaurants;
@@ -146,6 +150,13 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		F19563282C8094DA005E81EC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F195630D2C808AE7005E81EC /* Preview Assets.xcassets in Resources */,
+				F19563272C809121005E81EC /* ResutarantData.txt in Resources */,
 				F195630A2C808AE7005E81EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
