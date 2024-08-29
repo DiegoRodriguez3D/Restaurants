@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct DetailView: View {
+    var menu: MenuItem
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(menu.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                
+            
+            Text(menu.name)
+            
+            Spacer()
+        }
+        
     }
 }
 
 #Preview {
-    DetailView()
+    DetailView(menu: MenuItem(name: "Risotto with Gold Leaf",
+                              imageName: "risotto_gold",
+                              ingredients: ["Arborio rice", "chicken broth", "Parmigiano-Reggiano", "gold leaf", "white wine"],
+                              description: "Creamy and rich risotto topped with a delicate gold leaf.",
+                              isGlutenFree: true))
 }

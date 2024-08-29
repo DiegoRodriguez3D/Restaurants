@@ -12,15 +12,21 @@ struct RestaurantsView: View {
     var dataService = DataService()
     
     var body: some View {
-        ScrollView {
-            VStack {
-                ForEach(restaurants) { restaurant in
-                    Text(restaurant.name)
+        NavigationStack{
+            ScrollView {
+                VStack {
+                    ForEach(restaurants) { restaurant in
+                        NavigationLink {
+                            RestaurantProfileView(restaurant: restaurant)
+                        } label: {
+                            Text(restaurant.name)
+                        }
+                    }
                 }
-            }
-            .padding()
-            .onAppear {
-                restaurants = dataService.getData()
+                .padding()
+                .onAppear {
+                    restaurants = dataService.getData()
+                }
             }
         }
     }
