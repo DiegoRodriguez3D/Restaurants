@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct RestaurantsView: View {
+    @State var restaurants = [Restaurant]()
+    var dataService = DataService()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView {
+            VStack {
+                ForEach(restaurants) { restaurant in
+                    Text(restaurant.name)
+                }
+            }
+            .padding()
+            .onAppear {
+                restaurants = dataService.getData()
+            }
         }
-        .padding()
     }
 }
 

@@ -4,6 +4,7 @@
         "summary": "La Pergola in Rome offers a fine dining experience with panoramic views of the city. Renowned for its exquisite Italian cuisine, it holds three Michelin stars.",
         "imageName": "lapergola",
         "location": "Rome, Italy",
+        "latLong": "41.9140, 12.4546",
         "menu": [
             {
                 "name": "Risotto with Gold Leaf",
@@ -54,6 +55,7 @@
         "summary": "Located on the second floor of the Eiffel Tower, Le Jules Verne offers a high-end French cuisine experience with spectacular views over Paris.",
         "imageName": "lejulesverne",
         "location": "Paris, France",
+        "latLong": "48.8584, 2.2945",
         "menu": [
             {
                 "name": "Foie Gras",
@@ -104,6 +106,7 @@
         "summary": "A culinary haven in Girona, Spain, El Celler de Can Roca is run by the Roca brothers and holds three Michelin stars for its innovative Catalan cuisine.",
         "imageName": "cellerdecanroca",
         "location": "Girona, Spain",
+        "latLong": "41.9794, 2.8214",
         "menu": [
             {
                 "name": "Truffle Brioche",

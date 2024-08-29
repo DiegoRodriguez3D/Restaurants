@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct MenuItem {
+struct MenuItem: Identifiable {
+    var id = UUID()
     var name: String
     var imageName: String
     var ingredients: [String]

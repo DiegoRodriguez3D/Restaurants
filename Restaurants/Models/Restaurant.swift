@@ -7,10 +7,12 @@
 
 import Foundation
 
-struct Restaurant {
+struct Restaurant: Identifiable {
+    var id = UUID()
     var name: String
     var summary: String
     var imageName: String
     var location: String
+    var latLong: String
     var menu: [MenuItem]
 }
