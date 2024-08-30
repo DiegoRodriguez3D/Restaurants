@@ -12,9 +12,6 @@ struct RestaurantCardView: View {
     
     var body: some View {
         ZStack {
-            
-
-            
             Rectangle()
                 .background {
                     Image(restaurant.imageName)
@@ -44,8 +41,6 @@ struct RestaurantCardView: View {
             }
             .padding()
             .foregroundStyle(.white)
-            
-            
         }
         .frame(height: 350)
     }

@@ -30,7 +30,6 @@ struct RestaurantsView: View {
                     restaurants = dataService.getData()
                 }
             }
-            
         }
     }
 }

@@ -72,7 +72,6 @@
 				F195631A2C808C03005E81EC /* App */,
 				F195631B2C808C06005E81EC /* Core */,
 				F195631F2C808C41005E81EC /* Models */,
-				F19563252C808E0D005E81EC /* Helpers */,
 				F19563192C808BFD005E81EC /* Services */,
 				F19563092C808AE7005E81EC /* Assets.xcassets */,
 				F19563262C809121005E81EC /* RestaurantData.json */,
@@ -147,13 +146,6 @@
 				F19563202C808C56005E81EC /* Restaurant.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		F19563252C808E0D005E81EC /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F19563292C81A72D005E81EC /* Components */ = {
