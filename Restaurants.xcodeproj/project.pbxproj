@@ -16,7 +16,7 @@
 		F19563182C808BA4005E81EC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19563172C808BA4005E81EC /* DataService.swift */; };
 		F19563212C808C56005E81EC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19563202C808C56005E81EC /* Restaurant.swift */; };
 		F19563232C808DF3005E81EC /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19563222C808DF3005E81EC /* MenuItem.swift */; };
-		F19563272C809121005E81EC /* ResutarantData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F19563262C809121005E81EC /* ResutarantData.txt */; };
+		F19563272C809121005E81EC /* RestaurantData.json in Resources */ = {isa = PBXBuildFile; fileRef = F19563262C809121005E81EC /* RestaurantData.json */; };
 		F195632B2C81A747005E81EC /* GlutenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195632A2C81A747005E81EC /* GlutenView.swift */; };
 		F195632D2C81B64D005E81EC /* IngredientsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195632C2C81B64D005E81EC /* IngredientsListView.swift */; };
 		F195632F2C81B9F9005E81EC /* RestaurantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195632E2C81B9F9005E81EC /* RestaurantCardView.swift */; };
@@ -33,7 +33,7 @@
 		F19563172C808BA4005E81EC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F19563202C808C56005E81EC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F19563222C808DF3005E81EC /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
-		F19563262C809121005E81EC /* ResutarantData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ResutarantData.txt; sourceTree = "<group>"; };
+		F19563262C809121005E81EC /* RestaurantData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RestaurantData.json; sourceTree = "<group>"; };
 		F195632A2C81A747005E81EC /* GlutenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlutenView.swift; sourceTree = "<group>"; };
 		F195632C2C81B64D005E81EC /* IngredientsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsListView.swift; sourceTree = "<group>"; };
 		F195632E2C81B9F9005E81EC /* RestaurantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCardView.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 				F19563252C808E0D005E81EC /* Helpers */,
 				F19563192C808BFD005E81EC /* Services */,
 				F19563092C808AE7005E81EC /* Assets.xcassets */,
-				F19563262C809121005E81EC /* ResutarantData.txt */,
+				F19563262C809121005E81EC /* RestaurantData.json */,
 				F195630B2C808AE7005E81EC /* Preview Content */,
 			);
 			path = Restaurants;
@@ -143,8 +143,8 @@
 		F195631F2C808C41005E81EC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F19563202C808C56005E81EC /* Restaurant.swift */,
 				F19563222C808DF3005E81EC /* MenuItem.swift */,
+				F19563202C808C56005E81EC /* Restaurant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F195630D2C808AE7005E81EC /* Preview Assets.xcassets in Resources */,
-				F19563272C809121005E81EC /* ResutarantData.txt in Resources */,
+				F19563272C809121005E81EC /* RestaurantData.json in Resources */,
 				F195630A2C808AE7005E81EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

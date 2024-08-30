@@ -16,35 +16,35 @@
             {
                 "name": "Lobster Salad",
                 "imageName": "lobster_salad",
-                "ingredients": ["Lobster", "mixed greens", "avocado", "tomatoes", "olive oil"],
+                "ingredients": ["Lobster", "Mixed Greens", "Avocado", "Tomatoes", "Olive Oil"],
                 "description": "Fresh lobster served with a vibrant salad dressed in a light olive oil.",
                 "isGlutenFree": true
             },
             {
                 "name": "Beef Tenderloin",
                 "imageName": "beef_tenderloin",
-                "ingredients": ["Beef tenderloin", "rosemary", "garlic", "salt", "pepper"],
+                "ingredients": ["Beef Tenderloin", "Rosemary", "Garlic", "Salt", "Pepper"],
                 "description": "Perfectly cooked beef tenderloin seasoned with rosemary and garlic.",
                 "isGlutenFree": true
             },
             {
                 "name": "Truffle Pasta",
                 "imageName": "truffle_pasta",
-                "ingredients": ["Pasta", "black truffles", "butter", "Parmesan cheese"],
+                "ingredients": ["Pasta", "Black Truffles", "Butter", "Parmesan Cheese"],
                 "description": "Rich pasta dish with aromatic black truffles and a buttery sauce.",
                 "isGlutenFree": false
             },
             {
                 "name": "Tiramisu",
                 "imageName": "tiramisu",
-                "ingredients": ["Mascarpone cheese", "espresso", "ladyfingers", "cocoa powder", "sugar"],
+                "ingredients": ["Mascarpone cheese", "Espresso", "Ladyfingers", "Cocoa Powder", "Sugar"],
                 "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
                 "isGlutenFree": false
             },
             {
                 "name": "Gelato Trio",
                 "imageName": "gelato_trio",
-                "ingredients": ["Milk", "sugar", "eggs", "vanilla bean", "chocolate", "strawberries"],
+                "ingredients": ["Milk", "Sugar", "Eggs", "Vanilla Bean", "Chocolate", "Strawberries"],
                 "description": "A delightful assortment of vanilla, chocolate, and strawberry gelato.",
                 "isGlutenFree": true
             }

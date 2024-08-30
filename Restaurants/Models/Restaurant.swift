@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Restaurant: Identifiable {
-    var id = UUID()
+struct Restaurant: Identifiable, Decodable {
+    let id = UUID()
     var name: String
     var summary: String
     var imageName: String

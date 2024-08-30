@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E80015A3-A140-4445-9CD1-5563A3D513E9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D03DF5F-A834-4B3B-AEB4-4209AD153161"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Restaurants/Services/DataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "getData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0D03DF5F-A834-4B3B-AEB4-4209AD153161 - 40efcb898b332b0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Restaurants.DataService.getData() -&gt; Swift.Array&lt;Restaurants.Restaurant&gt;"
+                  moduleName = "Restaurants"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diego/Developer/Proyectos/IOS/Restaurants/Restaurants/Services/DataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15">
+               </Location>
+               <Location
+                  uuid = "0D03DF5F-A834-4B3B-AEB4-4209AD153161 - 40efcb898b332b0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Restaurants.DataService.getData() -&gt; Swift.Array&lt;Restaurants.Restaurant&gt;"
+                  moduleName = "Restaurants"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diego/Developer/Proyectos/IOS/Restaurants/Restaurants/Services/DataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

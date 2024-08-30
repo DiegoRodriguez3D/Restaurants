@@ -16,7 +16,7 @@ struct GlutenView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 20, height: 20)
-                .foregroundColor(isGlutenFree ? .green : .red)
+                .foregroundColor(isGlutenFree ? .green : .yellow)
             
             Text(isGlutenFree ? "Gluten Free" : "Gluten")
                 .font(.footnote)

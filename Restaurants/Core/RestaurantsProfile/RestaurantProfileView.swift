@@ -16,14 +16,17 @@ struct RestaurantProfileView: View {
          GridItem(.flexible(), spacing: 10)
      ]
     
-    // Función para abrir Mapas con coordenadas
-    func openMaps() {
+    // Launch Maps with restaurant location
+    func launchMaps() {
         let latLon = restaurant.latLong.split(separator: ",")
         guard let lat = latLon.first, let lon = latLon.last,
-              let url = URL(string: "https://maps.apple.com/?ll=\(lat),\(lon)&q=\(restaurant.name.replacingOccurrences(of: " ", with: "+"))") else {
+              let url = URL(string: "maps://?ll=\(lat),\(lon)&q=\(restaurant.name.replacingOccurrences(of: " ", with: "+"))") else {
             return
         }
-        UIApplication.shared.open(url)
+        
+        if UIApplication.shared.canOpenURL(url){
+            UIApplication.shared.open(url)
+        }
     }
     
     var body: some View {
@@ -45,14 +48,13 @@ struct RestaurantProfileView: View {
                     
                     Text(restaurant.location)
                         .font(.subheadline)
-                    
                 }
                 .padding(.horizontal)
                 
                 HStack {
                     Spacer()
                     
-                    Button(action: openMaps) {
+                    Button(action: launchMaps) {
                         HStack {
                             Image(systemName: "map.fill")
                             Text("Take me there!")
