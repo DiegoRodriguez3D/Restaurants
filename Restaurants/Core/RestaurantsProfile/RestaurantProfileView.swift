@@ -10,46 +10,96 @@ import SwiftUI
 struct RestaurantProfileView: View {
     var restaurant: Restaurant
     
-    // Define la disposición del grid
     let columns: [GridItem] = [
-        GridItem(.flexible(), spacing: 10),
-        GridItem(.flexible(), spacing: 10),
-        GridItem(.flexible(), spacing: 10)
-    ]
+         GridItem(.flexible(), spacing: 10),
+         GridItem(.flexible(), spacing: 10),
+         GridItem(.flexible(), spacing: 10)
+     ]
     
+    // Función para abrir Mapas con coordenadas
+    func openMaps() {
+        let latLon = restaurant.latLong.split(separator: ",")
+        guard let lat = latLon.first, let lon = latLon.last,
+              let url = URL(string: "https://maps.apple.com/?ll=\(lat),\(lon)&q=\(restaurant.name.replacingOccurrences(of: " ", with: "+"))") else {
+            return
+        }
+        UIApplication.shared.open(url)
+    }
     
     var body: some View {
         ScrollView {
-            VStack {
+            VStack(alignment: .leading) {
+                Image(restaurant.imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: 200)
+                    .clipped()
+                    .cornerRadius(10)
+                    .shadow(radius: 5)
                 
-                Text(restaurant.name)
-                    .font(.largeTitle)
-                    .bold()
+                VStack(alignment: .leading) {
+                    
+                    Text(restaurant.summary)
+                        .font(.headline)
+                        .multilineTextAlignment(.leading)
+                    
+                    Text(restaurant.location)
+                        .font(.subheadline)
+                    
+                }
+                .padding(.horizontal)
                 
-                Text(restaurant.summary)
-                    .font(.headline)
+                HStack {
+                    Spacer()
+                    
+                    Button(action: openMaps) {
+                        HStack {
+                            Image(systemName: "map.fill")
+                            Text("Take me there!")
+                                .fontWeight(.semibold)
+                        }
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                    }
+                    .padding()
+                    
+                    Spacer()
+                }
                 
-                Text(restaurant.location)
-                    .font(.subheadline)
-                
-                LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(restaurant.menu, id: \.name) { menu in
-                        NavigationLink(destination: DetailView(menu: menu)) {
-                            Image(menu.imageName)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 100, height: 100)
-                                .clipped()
-                                .cornerRadius(10)
+                VStack(alignment: .leading) {
+                    Text("Menu")
+                        .font(.title)
+                        .bold()
+                        .padding(.top)
+                    
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(restaurant.menu, id: \.name) { menu in
+                            NavigationLink(destination: DetailView(menu: menu)) {
+                                VStack {
+                                    Image(menu.imageName)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 100, height: 100)
+                                        .clipped()
+                                        .cornerRadius(10)
+                                        .shadow(radius: 3)
+                                    Text(menu.name)
+                                        .font(.caption)
+                                        .foregroundStyle(.gray)
+                                        .lineLimit(1)
+                                }
+                            }
                         }
                     }
                 }
                 .padding(.horizontal)
             }
-            .padding()
+            .padding(.bottom)
         }
-        .navigationTitle("Menu")
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(restaurant.name)
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 

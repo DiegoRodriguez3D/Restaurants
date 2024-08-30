@@ -11,16 +11,44 @@ struct DetailView: View {
     var menu: MenuItem
     
     var body: some View {
-        VStack {
-            Image(menu.imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                ZStack {
+                    GeometryReader { geometry in
+                        Image(menu.imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: geometry.size.width, height: geometry.size.height)
+                            .clipped()
+                            .cornerRadius(4)
+                    }
+                    .frame(height: 300)
+                    
+                    VStack {
+                        HStack {
+                            Spacer()
+                            
+                            GlutenView(isGlutenFree: menu.isGlutenFree)
+                        }
+                        .padding()
+                        
+                        Spacer()
+                    }
+                }
                 
-            
-            Text(menu.name)
-            
-            Spacer()
+                Text(menu.description)
+                    .font(.headline)
+                    .padding()
+                
+                Divider()
+                
+                IngredientsListView(ingredients: menu.ingredients)
+                
+                Spacer()
+            }
         }
+        .navigationTitle(menu.name)
+        .navigationBarTitleDisplayMode(.large)
         
     }
 }

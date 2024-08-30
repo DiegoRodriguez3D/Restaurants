@@ -13,21 +13,24 @@ struct RestaurantsView: View {
     
     var body: some View {
         NavigationStack{
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     ForEach(restaurants) { restaurant in
                         NavigationLink {
                             RestaurantProfileView(restaurant: restaurant)
                         } label: {
-                            Text(restaurant.name)
+                            RestaurantCardView(restaurant: restaurant)
+                                .padding(.bottom, 10)
                         }
                     }
+                    .padding(.horizontal)
                 }
-                .padding()
+                .ignoresSafeArea()
                 .onAppear {
                     restaurants = dataService.getData()
                 }
             }
+            
         }
     }
 }
