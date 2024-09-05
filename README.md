@@ -43,7 +43,7 @@ In this sample app, the data is retrieved from a JSON file.
   - `RestaurantData.json`: JSON file containing restaurant and menu data.
 
 ## 📸 Screenshots
-![restaurantList](https://github.com/user-attachments/assets/cfcb5de0-7766-4b37-8037-f01384687fd8)  
-![Restaurant Profile](https://github.com/user-attachments/assets/380c2202-4833-4a2c-aaf4-ff18b9079a7e)  
-![Menu Detail](https://github.com/user-attachments/assets/bfa68503-1cbc-474d-8be4-61b667f1b49a)  
-![Maps View](https://github.com/user-attachments/assets/d141261a-c591-4849-996e-7311c75edd1c)
+![restaurantList](https://github.com/user-attachments/assets/cfcb5de0-7766-4b37-8037-f01384687fd8)
+![Restaurant Profile](https://github.com/user-attachments/assets/380c2202-4833-4a2c-aaf4-ff18b9079a7e)
+![Menu Detail](https://github.com/user-attachments/assets/bfa68503-1cbc-474d-8be4-61b667f1b49a)
+![Maps VIew](https://github.com/user-attachments/assets/d141261a-c591-4849-996e-7311c75edd1c)
