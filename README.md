@@ -1,50 +1,49 @@
 # 🍽️ Restaurants
 
-## Descripción
+## Description
 
-**Restaurants** es una aplicación simple que permite a los usuarios explorar perfiles de diferentes restaurantes, cada uno con su propio menú detallado. Los usuarios pueden ver información sobre los platos, como ingredientes y si son libres de gluten, además de poder ubicar el restaurante utilizando Mapas para obtener direcciones GPS.
+**Restaurants** is a simple application that allows users to explore profiles of different restaurants, each with its own detailed menu. Users can view information about the dishes, such as ingredients and whether they are gluten-free, and they can also locate the restaurant using Maps for GPS directions.
 
-En esta app de muestra, los datos se obtienen desde un archivo JSON.
+In this sample app, the data is retrieved from a JSON file.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
-- **SwiftUI**: Utilizado para construir una interfaz de usuario moderna y declarativa.
-- **MVVM**: Arquitectura adoptada para separar la lógica de negocio de la interfaz de usuario, facilitando el mantenimiento y la escalabilidad.
-- **JSON**: Formato utilizado para almacenar y transportar los datos de los restaurantes y sus menús.
+- **SwiftUI**: Used to build a modern and declarative user interface.
+- **MVVM**: Architecture adopted to separate business logic from the user interface, making it easier to maintain and scale.
+- **JSON**: Format used to store and transport restaurant and menu data.
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-- **Visualización de Restaurantes**: Navega por una lista de restaurantes con vistas previas de sus perfiles.
-- **Perfil del Restaurante**: Accede a una página de detalles que incluye información sobre el restaurante y su menú.
-- **Navegación GPS**: Un botón "Take me there" que, al ser presionado, abre Mapas para mostrar direcciones hacia el restaurante.
-- **Detalle del Menú**: Al seleccionar un plato del menú, los usuarios pueden ver detalles como los ingredientes y la información sobre el gluten.
+- **Restaurant Browsing**: Navigate through a list of restaurants with preview cards for their profiles.
+- **Restaurant Profile**: Access a detailed page that includes information about the restaurant and its menu.
+- **GPS Navigation**: A "Take me there" button that, when pressed, opens Maps to show directions to the restaurant.
+- **Menu Details**: When selecting a menu item, users can see details such as ingredients and gluten information.
 
+## 📂 Project Structure
 
-## 📂 Estructura del Proyecto
 - **App**
-  - `RestaurantsApp.swift`: Punto de entrada de la aplicación.
+  - `RestaurantsApp.swift`: Entry point of the application.
 - **Core**
   - **Components**
-    - `GlutenView.swift`: Componente que indica si un plato contiene gluten.
-    - `IngredientsListView.swift`: Vista que lista los ingredientes de un plato.
-    - `RestaurantCardView.swift`: Componente para mostrar una tarjeta de restaurante en la lista.
+    - `GlutenView.swift`: Component indicating whether a dish contains gluten.
+    - `IngredientsListView.swift`: View listing the ingredients of a dish.
+    - `RestaurantCardView.swift`: Component for displaying a restaurant card in the list.
   - **Detail**
-    - `DetailView.swift`: Pantalla que muestra el detalle de un item del menú de un restaurante.
+    - `DetailView.swift`: Screen showing the details of a restaurant menu item.
   - **Restaurants**
-    - `RestaurantsView.swift`: Pantalla que muestra la lista de restaurantes.
+    - `RestaurantsView.swift`: Screen displaying the list of restaurants.
   - **RestaurantsProfile**
-    - `RestaurantsProfileView.swift`: Pantalla que muestra el perfil de un restaurante.
+    - `RestaurantsProfileView.swift`: Screen showing the profile of a restaurant.
 - **Models**
-  - `MenuItem.swift`: Modelo que representa un ítem del menú del restaurante.
-  - `Restaurant.swift`: Modelo que representa un restaurante.
+  - `MenuItem.swift`: Model representing a restaurant menu item.
+  - `Restaurant.swift`: Model representing a restaurant.
 - **Services**
-  - `DataService.swift`: Servicio para manejar la carga de datos desde un archivo JSON local.
+  - `DataService.swift`: Service for handling data loading from a local JSON file.
 - **Data**
-  - `RestaurantData.json`: Archivo JSON que contiene los datos de los restaurantes y sus menús.
+  - `RestaurantData.json`: JSON file containing restaurant and menu data.
 
-## 📸 Capturas de Pantalla
-![restaurantList](https://github.com/user-attachments/assets/cfcb5de0-7766-4b37-8037-f01384687fd8)
-![Restaurant Profile](https://github.com/user-attachments/assets/380c2202-4833-4a2c-aaf4-ff18b9079a7e)
-![Menu Detail](https://github.com/user-attachments/assets/bfa68503-1cbc-474d-8be4-61b667f1b49a)
-![Maps VIew](https://github.com/user-attachments/assets/d141261a-c591-4849-996e-7311c75edd1c)
-
+## 📸 Screenshots
+![restaurantList](https://github.com/user-attachments/assets/cfcb5de0-7766-4b37-8037-f01384687fd8)  
+![Restaurant Profile](https://github.com/user-attachments/assets/380c2202-4833-4a2c-aaf4-ff18b9079a7e)  
+![Menu Detail](https://github.com/user-attachments/assets/bfa68503-1cbc-474d-8be4-61b667f1b49a)  
+![Maps View](https://github.com/user-attachments/assets/d141261a-c591-4849-996e-7311c75edd1c)
